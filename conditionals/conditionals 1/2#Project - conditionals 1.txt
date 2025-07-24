@@ -1,0 +1,25 @@
+2#Project - conditionals 1
+#grades1
+#set a username and password
+First_username = "hamada@yel3ab.com"
+First_password = "fish"
+
+second_username = 'wwe.ea'
+second_password = "cena"
+
+#ask the user about the username and the password
+username = input("Enter username: ").strip().lower()
+password = input("Enter password: ").strip().lower()
+
+#compare them and print the result
+if username == First_username and password == First_password:
+    print("Access is allowed")
+elif username == second_username and password == second_password:
+    print("Access is allowed")
+else:
+    print("Sorry, access is not allowed")
+
+
+
+
+https://www.programiz.com/online-compiler/4XKtHU9RYQmi3

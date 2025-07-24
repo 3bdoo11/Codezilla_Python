@@ -1,0 +1,19 @@
+# Project - lists indexing
+# get the order from user 
+pizzas = [None, "Margherita", 'Pepperoni', "Super Supreme","Hawaiian","Meat Lovers", 'Cheese Lovers' ]
+
+order = int(input("please, Enter the number of the pizza you want to order: \n1. Margherita\n2. Pepperoni\n3. Super Supreme\n4. Hawaiian\n5. Meat Lovers\n6. Cheese Lovers\n\n"))
+
+if 0 < order <= 6:
+    num_pizza = input("Enter the number of pizzas you want: ")
+    print("-"*40)
+    print("Thanks for choosing Codezillas pizza!")
+    print("Please, Enjoy your time")
+    print(f"while we get \"{num_pizza}\" \"{pizzas[order]}\" pizza ready for you.")
+else:
+    print("-"*40)
+    print("Please, Enter a Number between 1 and 6")
+
+
+
+https://www.programiz.com/online-compiler/64X8vTnAVwa7Q

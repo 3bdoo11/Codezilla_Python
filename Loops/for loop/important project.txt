@@ -1,0 +1,95 @@
+important project
+# total = 0
+# for i in range(28, 929, 2):
+#     total += i
+# print(total)    
+
+
+
+# total = 0
+# for i in range(28, 929):
+#     if i % 2 == 0:
+#         total += i
+# print(total)        
+
+
+
+num = []
+for i in range(28, 929):
+    if i % 2 == 0:
+        num.append(i)
+total = sum(num)
+print(total)
+
+
+
+nums = [28]
+num = 28
+while num <= 928:
+    num +=1
+    if num % 2 == 0:
+        nums.append(num)
+total = sum(nums)    
+print(total)
+
+
+# even_nums = range(28, 929, 2)
+# total = sum(even_nums)
+# print(total)
+
+
+
+
+# print(sum(range(28, 929, 2)))
+
+
+
+
+
+
+# fruits = ['apple', 'banana', 'orange', 'grape', 'mango'] 
+
+# print("Available fruits: ")
+
+# for i in range(len(fruits)):
+#     print(f"{i+1}. {fruits[i]}")
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# # a list of pizzas 
+# pizzas = ['Margherita', 'Pepperoni', 'Super Supreme', 
+# 'Hawaiian', 'Meat Lovers', 'Cheese Lovers']
+# # great the user and print the massege
+# massege = '''Welcome to Codezillas Pizza!
+# We heve the following pizzas:'''
+# print(massege)
+# print("-" * 30)
+
+# for i in range(len(pizzas)):
+#     print(f"{i + 1}. {pizzas[i]}")
+
+# pizza = int(input("Enter the number of the pizza you want to order: "))    
+# num_pizzas = int(input("Enter the number of pizzas you want: "))
+
+# order = pizzas[pizza - 1]
+# print("-" * 30)
+# print("Thanks for choosing Codezillas Pizza!")
+# print("Please, Enjoy your time ")
+# print(f"Wile we get {num_pizzas} '{order}' pizza ready for you.")
+
+
+
+
+
+
+https://www.programiz.com/online-compiler/4qb7JOy1Q59Sn

@@ -1,0 +1,25 @@
+#project secret num 
+
+#1-motivate the user
+print("It is the time to see if we could do better 😀")
+print("-"*20)
+#2-ask about num
+Number = float(input("Enter the number: "))
+#3-ask the user the num is even or odd
+Answer = input(f"{Number} is even or odd? 🤔🤔 \n").lower().strip()
+#4-(if the num%2==0 its even) and (if num%!=0 its odd)
+if Number %2 == 0:
+    Type = "even"
+else:
+    Type = "odd"
+
+
+if Answer == Type:
+    print("Bravoooo!!! 🥳🥳🥳")
+else:
+    print("No problem, let's try again 😀")
+#5- if he answer right print congratulate him and if not motivate him  
+
+
+
+https://www.programiz.com/online-compiler/7K0uIhDG91DOj

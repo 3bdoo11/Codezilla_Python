@@ -1,0 +1,41 @@
+# num = 1
+# while num <= 100:
+#     print(num)
+#     num += 1
+
+# num = 2
+# while num <= 1000:
+#     print(num)
+#     num += 2
+
+# num = -1
+# while num >= -100:
+#     print(num)
+#     num -= 2
+
+# num_lst = [12]
+
+# num = 13
+# while num <=99:
+#     num_lst.append(num)
+#     num += 1
+    
+# print(num_lst)
+
+
+# fruits = ['apple', 'banana', 'orange', 'grape', 
+# 'kiwi', 'mango', 'strawberry', 'pineapple'] 
+
+# idx_num = 0
+
+# while idx_num <= len(fruits)-1:
+#     print(fruits[idx_num])
+#     idx_num += 1
+
+
+
+
+
+
+
+https://www.programiz.com/online-compiler/5vC2dgLgBaqpf

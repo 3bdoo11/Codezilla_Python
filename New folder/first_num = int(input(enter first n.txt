@@ -1,0 +1,29 @@
+first_num = int(input("enter first number:"))
+second_num = int(input("enter second number:")) 
+third_num = int(input("enter third number:"))
+
+if   first_num > second_num:
+  if first_num > third_num:
+    print(str(first_num)+" is the greatst")
+  else:print(str(third_num)+" is the greatset")
+else:
+  if second_num > third_num:
+    print(str(second_num)+" is the greatset")
+  else: print(str(third_num)+" is the greatset")
+  
+
+
+
+
+  
+
+    
+  
+
+  
+
+
+
+
+
+
