@@ -1,0 +1,154 @@
+# students = { 
+#     "Mohamed Hassan": {"grades": { 
+#         "math": 100, 
+#         "english": 90, 
+#         "science": 80, 
+#         "arabic": 100,  
+#         "history": 97}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ahmed Kamal": {"grades": { 
+#         "math": 100, 
+#         "english": 95, 
+#         "science": 93, 
+#         "arabic": 100, 
+#         "history": 94}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ali Adel": {"grades": { 
+#         "math": 85, 
+#         "english": 83, 
+#         "science": 87, 
+#         "arabic": 100, 
+#         "history": 90}, 
+#         "school": "Al-Azhar" 
+#     }, 
+#     "Sara Ahmed": {"grades": { 
+#         "math": 100, 
+#         "english": 94, 
+#         "science": 98, 
+#         "arabic": 100, 
+#         "history": 100}, 
+#         "school": "Al-Azhar" 
+#     } 
+# } 
+
+
+# for name in students:
+#     print(f"Student Name: {name}")
+#     print(f"School: {students[name]["school"]}")
+#     print("Grades:")
+#     for subject, degree in students[name]["grades"].items():
+#         print(f"{subject}: {degree}")
+#     print("-" * 20)
+
+
+
+
+
+
+
+
+# students = { 
+#     "Mohamed Hassan": {"grades": { 
+#         "math": 100, 
+#         "english": 90, 
+#         "science": 80, 
+#         "arabic": 100,  
+#         "history": 97}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ahmed Kamal": {"grades": { 
+#         "math": 100, 
+#         "english": 95, 
+#         "science": 93, 
+#         "arabic": 100, 
+#         "history": 94}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ali Adel": {"grades": { 
+#         "math": 85, 
+#         "english": 83, 
+#         "science": 87, 
+#         "arabic": 100, 
+#         "history": 90}, 
+#         "school": "Al-Azhar" 
+#     }, 
+#     "Sara Islam": {"grades": { 
+#         "math": 100, 
+#         "english": 94, 
+#         "science": 98, 
+#         "arabic": 100, 
+#         "history": 100}, 
+#         "school": "Al-Azhar" 
+#     } 
+# } 
+
+# for student in students:
+#     total = []
+#     for degree in students[student]["grades"].values():
+#         total.append(degree)
+#         percentage = sum(total) / len(total)
+#     print(f"{student}'s total percentage is {percentage:.2f}%")
+#     print("-" * 20)    
+
+
+
+
+
+# students = { 
+#     "Mohamed Hassan": {"grades": { 
+#         "math": 100, 
+#         "english": 90, 
+#         "science": 80, 
+#         "arabic": 100,  
+#         "history": 97} 
+#     }, 
+#     "Ahmed Kamal": {"grades": { 
+#         "math": 100, 
+#         "english": 95, 
+#         "science": 93, 
+#         "arabic": 100, 
+#         "history": 94} 
+#     }, 
+#     "Ali Adel": {"grades": { 
+#         "math": 85, 
+#         "english": 83, 
+#         "science": 87, 
+#         "arabic": 100, 
+#         "history": 90} 
+#     }, 
+#     "Israa Ali": {"grades": { 
+#         "math": 100, 
+#         "english": 94, 
+#         "science": 98, 
+#         "arabic": 100, 
+#         "history": 100} 
+#     } 
+# } 
+
+
+# user_input = input("Please, Enter the name of the student: ").title()
+# not_found = True
+# if user_input in students:
+#     not_found = False
+#     for student in students:
+#         total = []
+#         print(f"{student} got the following grades: ")
+#         student_grades = students[student]["grades"]
+#         for subject, degree in student_grades.items():
+#             print(f"{subject}: {degree}")
+#             total.append(degree)
+#             percentage = sum(total) / len(total)
+#         print("-" * 20)    
+#         print(f"{student}'s total percentage is {percentage:.2f}%")
+#         break
+# if not_found:
+#     print("Sorry, we don't have info about this student")
+
+
+
+
+
+
+https://www.programiz.com/online-compiler/078oG60VqO5Qp

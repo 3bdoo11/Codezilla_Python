@@ -1,0 +1,40 @@
+3# Project - conditionals 3
+3#grades3
+#greeting the user and get the subjects score
+print("Please Enter scores between 0 and 100 ")
+print("-" * 20)
+Arabic = float(input("Enter Arabic score: "))
+English = float(input("Enter English score: "))
+Math = float(input("Enter Math score: "))
+Physics = float(input("Enter Physics score: "))
+Chemistry = float(input("Enter Chemistry score: "))
+Biology = float(input("Enter Biology score: "))
+print("-" * 20)
+ 
+Score = Arabic + English + Math + Physics + Chemistry + Biology
+Score = ( Score * 100 )  / 600
+
+if Score >= 90:
+    grade = "A"
+elif Score >= 80:
+    grade = "B"
+elif Score >= 70:
+    grade = "C"
+elif Score >= 60:
+    grade = "D"
+elif Score >= 50:
+    grade = "D-"
+else:
+    grade = "F"
+
+
+if  not 0 <= (Arabic or English or Math or Physics or Chemistry or Biology) <= 100:
+    print("enter valide inputs")
+else:
+    print(f"Your score is {Score:.2f}%\nYour grade is {grade}")
+
+
+
+
+
+https://www.programiz.com/online-compiler/378gFsqI4OKGn

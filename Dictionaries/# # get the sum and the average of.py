@@ -1,0 +1,234 @@
+# # get the sum and the average of the following grades 
+# students = {
+#     "Mohamed": {
+#         "grades": {
+#             "math": 100,
+#             "english": 90,
+#             "science": 80,
+#             "arabic": 100
+#         },
+#         "age": 20
+#     },
+#      "Ahmed": {
+#         "grades": {
+#             "math": 80,
+#             "english": 95,
+#             "science": 90,
+#             "arabic": 100
+#         },
+#         "age": 21
+#         }
+    
+# }
+
+# mohamed_grades = []
+# for grade in students["Mohamed"]["grades"]:
+#     mohamed_grades.append(students["Mohamed"]["grades"][grade])
+# print(mohamed_grades)
+
+
+# ahmed_grades = []
+# for grade2 in students["Ahmed"]["grades"]:
+#     ahmed_grades.append(students["Ahmed"]["grades"][grade2])
+# print(ahmed_grades)
+
+# mohame_average_grade = sum(mohamed_grades) / len(mohamed_grades)
+
+# print(mohame_average_grade)
+
+# ahamed_average_grade = sum(ahmed_grades) / len(ahmed_grades)
+
+# print(ahamed_average_grade)
+
+###############################################
+
+
+# students = { 
+# "Mohamed": {"grades": [100, 90, 80], "age": 20}, 
+# "Ahmed": {"grades": [100, 95, 93], "age": 21}, 
+# "Ali": {"grades": [85, 83, 87], "age": 19}, 
+# "Sara": {"grades": [100, 94, 98], "age": 21} 
+# } 
+
+
+
+# print(f"Mohamed grades is: {students["Mohamed"]["grades"]}")
+
+# print(f"Ali's age is: {students["Ali"]["age"]}")
+
+# print(f"Sara's age is: {students["Sara"]["age"]}")
+
+# Sara_grades = students["Sara"]["grades"]
+# print("Sara grades is: ")
+# print(*Sara_grades, sep="\n")
+
+
+
+
+# students = { 
+#     "Mohamed": {"grades": { 
+#         "math": 100, 
+#         "english": 90, 
+#         "science": 80, 
+#         "arabic": 100,  
+#         "history": 97}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ahmed": {"grades": { 
+#         "math": 100, 
+#         "english": 95, 
+#         "science": 93, 
+#         "arabic": 100, 
+#         "history": 94}, 
+#         "school": "Codezilla" 
+#     }, 
+#       "Ali": {"grades": { 
+#         "math": 85, 
+#         "english": 83, 
+#         "science": 87, 
+#         "arabic": 100, 
+#         "history": 90}, 
+#         "school": "Al-Azhar" 
+#     }, 
+#     "Sara": {"grades": { 
+#         "math": 100, 
+#         "english": 94, 
+#         "science": 98, 
+#         "arabic": 100, 
+#         "history": 100}, 
+#         "school": "Al-Azhar" 
+#     } 
+# } 
+
+
+# mohamed_grades = students["Mohamed"]["grades"]
+# print(f"Mohamed grade in math is: {mohamed_grades["math"]}")
+# print(f"Mohamed grade in english is: {mohamed_grades["english"]}")
+# print(f"Mohamed school is: {students["Mohamed"]["school"]} ")
+
+# print("-" * 19)
+
+# Ahmed_grades = students["Ahmed"]["grades"]
+# print(f"Ahmed grade in math is: {Ahmed_grades["math"]}")
+# print(f"Ahmed grade in science is: {Ahmed_grades["science"]}")
+# print(f"Ahmed grade in arabic is: {Ahmed_grades["arabic"]}")
+
+# print("-" * 19)
+
+# ali_grades = students["Ali"]["grades"]
+# print(f"Ali School is: {students["Ali"]["school"]} ")
+# print(f"Ali grade in history is: {ali_grades["history"]}")
+# print(f"Ali grade in science is: {ali_grades["science"]}")
+# print(f"Ali grade in Arabic is: {ali_grades["arabic"]}")
+
+# print("-" * 19)
+
+# sara_grades = students["Sara"]["grades"]
+
+# print(f"Sara garde in math is: {sara_grades["math"]} ")
+# print(f"Sara garde in science is: {sara_grades["science"]} ")
+# print(f"Sara garde in history is: {sara_grades["history"]} ")
+
+
+
+
+
+# restaurant_menu = { 
+#     "Burgers": {"Beef": 100, "Chicken": 80, "Bacon": 120}, 
+#     "Pizzas": {"Cheese": 100, "Pepperoni": 120, "Veggie": 100}, 
+#     "Drinks": {"Coke": 20, "Fanta": 20, "Sprite": 20}, 
+#     "Desserts": {"Ice Cream": 50, "Chocolate Cake": 60, 
+#         "Cheese Cake": 70}, 
+#     "Sides": {"Fries": 30, "Onion Rings": 40, "Potato Wedges": 
+# 50} 
+# } 
+
+# burgers = restaurant_menu["Burgers"]
+# pizzas =  restaurant_menu["Pizzas"]
+# drinks =  restaurant_menu["Drinks"]
+# desserts =  restaurant_menu["Desserts"]
+# sides =  restaurant_menu["Sides"]
+
+# print(f"Chicken burger price is: {burgers["Chicken"]}")
+# print(f"Veggie Pizza price is: {pizzas["Veggie"]}")
+# print(f"Coke price is: {drinks["Coke"]}")
+# print(f"Chocolate Cake price is: {desserts["Chocolate Cake"]}")
+# print(f"Onion Rings price is: {sides["Onion Rings"]}")
+
+
+
+
+# employees = { 
+#     "Mohamed Hassan": {"age": 35, "salary": 20_000, 
+# "department": "IT"}, 
+#     "Ahmed Khaled": {"age": 24, "salary": 10_000, "department": 
+# "IT"}, 
+#     "Ali Hamed": {"age": 30, "salary": 15_000, "department": 
+# "HR"}, 
+#     "Mahmoud Samir": {"age": 28, "salary": 12_000, 
+# "department": "HR"}, 
+#     "Ahmed Hassan": {"age": 25, "salary": 10_000, "department": 
+# "IT"} 
+# } 
+
+
+# print(f"Mohamed Hassan age is: {employees["Mohamed Hassan"]["age"]} years old")
+# print("-"*20)
+# print(f"Ali Hamed department is: {employees["Ali Hamed"]["department"]} section")
+# print("-"*20)
+# print(f"Ahmed Khaled Salary is: ${employees["Ahmed Khaled"]["salary"]:,}")
+# print("-"*20)
+# print(f"""Mahmoud Samir is {employees["Mahmoud Samir"]["age"]} years old, he works in {employees["Mahmoud Samir"]["department"]} department and his salary is ${employees["Mahmoud Samir"]["salary"]:,}")  """)
+# print("-"*20)
+# print(f"""Ahmed Hassan is {employees["Ahmed Hassan"]["age"]} years old, he works in {employees["Ahmed Hassan"]["department"]} department and his salary is ${employees["Ahmed Hassan"]["salary"]:,}")  """)
+
+
+
+# students = { 
+#     "Mohamed": {"grades": { 
+#         "math": 100, 
+#         "english": 90, 
+#         "science": 80, 
+#         "arabic": 100,  
+#         "history": 97}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ahmed": {"grades": { 
+#         "math": 100, 
+#         "english": 95, 
+#         "science": 93, 
+#         "arabic": 100, 
+#         "history": 94}, 
+#         "school": "Codezilla" 
+#     }, 
+#     "Ali": {"grades": { 
+#         "math": 85, 
+#         "english": 83, 
+#         "science": 87, 
+#         "arabic": 100, 
+#         "history": 90}, 
+#         "school": "Al-Azhar" 
+#     }, 
+#     "Sara": {"grades": { 
+#         "math": 100, 
+#         "english": 94, 
+#         "science": 98, 
+#         "arabic": 100, 
+#         "history": 100}, 
+#         "school": "Al-Azhar" 
+#         } 
+# } 
+# ali_grades = []
+# for grade in students["Ali"]["grades"]:
+#     ali_grades.append(students["Ali"]["grades"][grade])
+
+# percentage_ali = (sum(ali_grades) / 500) * 100 
+# print(f"The Percentage of Ali score is: %{percentage_ali:.2f} ")
+# print(sum(ali_grades) / len(ali_grades))
+
+
+
+
+
+https://www.programiz.com/online-compiler/2lO2jNIx3XrBi
+
