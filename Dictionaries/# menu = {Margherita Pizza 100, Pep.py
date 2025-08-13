@@ -1,0 +1,188 @@
+# menu = {"Margherita Pizza": 100, "Pepperoni Pizza": 120, 
+# "Meat Lovers Pizza": 150, "Chicken Pizza": 130} 
+
+# message  = "Enter the name of the item to add to the menu (press Enter to Exit ): "
+
+# while True:
+#     item = input(message)
+#     if item == "":
+#         break
+#     price =input("Enter item price: ")
+#     menu.update({item : float(price)})
+    
+# for food, price in menu.items():
+#     print(f"{food.title()}: {price:.2f} EGP")
+
+
+
+
+
+
+# menu = {"Margherita Pizza": 100, "Pepperoni Pizza": 120,  
+# "Meat Lovers Pizza": 150, "Chicken Pizza": 130, 
+# "Beef Burger": 100, "Chicken Burger": 80} 
+
+# message = "Enter item name to be deleted (press Enter to Exit): "
+
+# while True:
+#     item_del = input(message).title()
+#     if item_del == "":
+#         break
+#     if item_del not in menu:
+#         print('item not found')
+#         continue
+#     delete = input(f"Are you sure you want to delete {item_del}? (y/n): ").lower() 
+#     if delete == "n":
+#         continue
+#     menu.pop(item_del)
+#     print(f"{item_del} has been deleted")
+
+# print('The New Menu:')    
+# for item ,price in menu.items():
+#     print(f"{item}: {price:.2f} EGP")
+
+
+
+
+
+# menu = {"Margherita Pizza": 100, "Pepperoni Pizza": 120,  
+# "Meat Lovers Pizza": 150, "Chicken Pizza": 130, 
+# "Beef Burger": 100, "Chicken Burger": 80} 
+
+# message = "Enter item name to be updated (press Enter to Exit): "
+
+# while True:
+#     item_edit = input(message).title()
+#     if item_edit == "":
+#         break
+#     if item_edit not in menu:
+#         print("Item not found")
+#         continue
+#     new_price = float(input("Enter the new price: "))
+#     menu[item_edit] = new_price
+#     print(f"{item_edit} has been updated")
+    
+# print("The New Menu: ")    
+# for item, price in menu.items():
+#     print(f"{item}: {price:.2f} EGP")
+
+
+
+
+
+# menu = {"Margherita Pizza": 100, "Pepperoni Pizza": 120, 
+# "Meat Lovers Pizza": 150, "Chicken Pizza": 130, 
+# "Beef Burger": 100, "Chicken Burger": 80} 
+
+# message = """1. Add new items
+# 2. Remove items
+# 3. Update items
+# 4. Exit
+# """
+
+# while True:
+#     print(message)
+#     procces = input("Enter your choice: ")
+    
+#     if int(procces) == 1:
+#         new_item_price = input("Enter item price: ")
+#         new_item_name = input("Enter the name of the item to add to the menu (press Enter to Exit): ").title()
+#         if new_item_name == "":
+#             continue
+#         menu.update({new_item_name : int(new_item_price)})
+#         print(f"{new_item_name} has been added successfully")
+#     elif int(procces) == 2:
+#         while True:
+#             item_remove = input("Enter item name to be deleted (press Enter to Exit): ").title()
+#             if item_remove == "":
+#                 break
+#             if item_remove not in menu:
+#                 print("item not found")
+#                 continue
+#             delete = input(f"Are you sure you want to delete {item_remove}? (y/n): ").lower()
+#             if delete == "n":
+#                 continue
+#             del menu[item_remove]
+#             print(f"{item_remove} has been deleted")
+#     elif int(procces) == 3:
+#         while True:
+#             item_update = input("Enter item name to be updated (press Enter to Exit): ").title()
+#             if item_update == "":
+#                 break
+#             if item_update not in menu:
+#                 print("item not found")
+#                 continue
+#             price_update = int(input("Enter the new price: "))
+#             menu[item_update] = price_update
+#             print(f"{item_update} has been updated")
+#     elif int(procces) == 4:
+#         print("The New Menu:")
+#         for item ,price in menu.items():
+#             print(f"{item}: {price:.2f} EGP")
+#         exit()
+#     else:
+#         print("invaled choice enter a number between 1 and 4")
+#         continue
+
+
+
+
+# # dictionary with the words and definitions 
+# words = { 
+#     "Absence":"The lack or unavailability of something or someone.", 
+#     "Approval":"Having a positive opinion of something or someone.", 
+#     "Answer":"The response or receipt to a phone call, question, or letter.", 
+#     "Attention":"Noticing or recognizing something of interest.", 
+#     "Amount":"A mass or a collection of something", 
+#     "Borrow":"To take something with the intention of returning it after a period of time.", 
+#     "Baffle":"An event or thing that is a mystery and confuses.", 
+#     "Ban":"An act prohibited by social pressure or law.", 
+#     "Banish":"Expel from the situation, often done officially.", 
+#     "Banter":"Conversation that is teasing and playful.", 
+#     "Characteristic":"referring to features that are typical to the person, place, or thing.", 
+#     "Cars":"Four-wheeled vehicles used for traveling.", 
+#     "Care":"extra responsibility and attention.", 
+#     "Chip":"a small and thin piece of a larger item.", 
+#     "Cease":"to eventually stop existing.", 
+#     "Dialogue":"A conversation between two or more people.", 
+#     "Decisive":"a person who can make decisions promptly.", 
+#     } 
+    
+# import random
+
+
+# message = """1. Review random word
+# 2. Test youself
+# 3. Exit
+# """
+# while True:
+#     print(message)
+#     choice = input("Enter your choice: ")
+#     if choice == "1":
+#         rand_word, defin = random.choice(list(words.items()))
+#         print(f"Word: {rand_word}")
+#         print(f"Definition: {defin}")
+#         continue
+#     elif choice == "2":
+#         rand_word, defin = random.choice(list(words.items()))
+#         print(f"Definition: {defin}")
+#         answer = input("Enter the Word: ").capitalize()
+#         if answer == rand_word:
+#             print("Great, you did it from the first try 🥳🥳")
+#             continue
+#         else:
+#             print("Wrong answer you have 1 more attempt")
+#             sec_answer = input("Enter the Word: ").capitalize()
+#             if sec_answer == rand_word:
+#                 print("Correct answer")
+#                 continue
+#             else:
+#                 print("Wrong answer you gave no more attempts")
+#                 print(f"The correct answer is {rand_word}")
+#                 continue
+#     elif choice == "3":
+#         print("Have a nice day!")
+#         exit()
+#     else:
+#         print("invalid choice")
+#         continue

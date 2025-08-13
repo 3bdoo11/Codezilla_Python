@@ -1,0 +1,17 @@
+#books_num = 133
+#people_num = 6
+#result = books_num // people_num
+#reminde = books_num % people_num
+#print(result)
+#print(reminde)
+
+#people_number = 147
+#rooms_num = 35
+##result = people_number // rooms_num
+#reminde = people_number % rooms_num
+#print(result)
+#print(reminde)
+
+#sallary = 5000
+#bouns = ((sallary + 1000) * 3) - 700
+#print(bouns)

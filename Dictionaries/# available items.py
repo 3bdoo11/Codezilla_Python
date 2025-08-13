@@ -1,0 +1,55 @@
+# available items 
+hot_drinks = {"Coffee": 20, "Tea": 15, "Hot Chocolate": 25} 
+cold_drinks = {"Soda": 10, "Iced Tea": 15, "Smoothie": 30} 
+desserts = {"Ice Cream": 50, "Chocolate Cake": 60, 
+"Cheesecake": 70} 
+
+options = """1. Hot Drinks
+2. Cold Drinks
+3. Desserts
+"""
+print("Welcome to Codezilla Cafe")
+
+final_order = []
+total_order_price = 0
+while True:
+    print(options)
+    choice = input("Please, Enter the Number of the Item Type(Enter to exit): ")
+    print("-" * 20)
+    if choice == "":
+        print("Your Order is:")
+        print("-" * 20)
+        for item,price,quantity in final_order:
+            total_item_price = price * quantity
+            print(f"Item: {item}\nPrice: {price} EGP\nQuantity: {quantity}: {quantity}\nTotal: {total_item_price} EGP")
+            print("-" * 20)
+            total_order_price += total_item_price
+        print(f"Total Order: {total_order_price} EGP") 
+        exit()
+            
+    elif choice == "1":
+        for index, (hot_drink, price) in enumerate(hot_drinks.items()):
+            print(f"{index + 1}. {hot_drink}: {price} EGP")
+        order = int(input("Enter Item Number: "))
+        quantity = int(input("Please Enter Quantity: "))
+        for index, (hot_drink, price) in enumerate(hot_drinks.items()):
+            if order == index+1:
+                final_order.append((hot_drink,price,quantity))
+    elif choice == "2":
+        for index, (cold_drink, price) in enumerate(cold_drinks.items()):
+            print(f"{index + 1}. {cold_drink}: {price} EGP")
+        order = int(input("Enter Item Number: "))
+        quantity = int(input("Please Enter Quantity: "))
+        for index, (cold_drink, price) in enumerate(cold_drinks.items()):
+            if order == index+1:
+                final_order.append((cold_drink,price,quantity))
+    elif choice == "3":
+        for index, (dessert, price) in enumerate(desserts.items()):
+            print(f"{index + 1}. {dessert}: {price} EGP")
+        order = int(input("Enter Item Number: "))
+        quantity = int(input("Please Enter Quantity: "))
+        for index, (dessert, price) in enumerate(desserts.items()):
+            if order == index+1:
+                final_order.append((dessert,price,quantity))
+    else:
+        print("invalid choice ")

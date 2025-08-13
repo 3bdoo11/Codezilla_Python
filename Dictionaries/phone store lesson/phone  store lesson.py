@@ -1,0 +1,113 @@
+available_items = {
+    "Iphone 12": {
+        "price": 700,
+        "quantity": 4
+        },
+        "Iphone 12 Pro": {
+        "price": 1000,
+        "quantity": 2
+        },
+        "Iphone 12 Pro Max": {
+        "price": 1200,
+        "quantity":1
+        }
+    }
+
+
+menu_message = """
+What would you like to do?
+1. View available items
+2. View Cart
+3. View total price of cart
+4. Quit
+"""
+
+cart = {}
+while True:
+    print(menu_message)
+    user_choice = input("Enter The number of your choice: ")
+    if user_choice == "1":
+        # print the available items with prices
+        print("The Available items are: ")
+        # a) loop in the dict 
+        for index ,item in enumerate(available_items):
+            
+            item_price = available_items[item]["price"]
+            item_quantity = available_items[item]["quantity"]
+            if item_quantity < 1:
+                print(f"{index + 1}.{item}: ${item_price} \t(Out of Stock)")
+            else:    
+                print(f"{index + 1}.{item}: ${item_price}")
+        print(f"{index + 2}.Return")
+        item_number = int(input("Enter The number of the item you want to buy: "))
+        if item_number == len(available_items)+1:
+            continue
+        if item_number in range(1,len(available_items)+1):
+            
+            order_name = list(available_items.keys())[item_number-1]
+            order_price = available_items[order_name]["price"]
+            item_quantity = available_items[order_name]["quantity"]
+            if item_quantity == 0:
+                print("This Item is out of stock")
+                continue
+           
+            available_items[order_name]["quantity"] -= 1
+            order_quantity = cart.get(order_name, {}).get("quantity", 0) + 1
+            order_info = {
+                order_name: {
+                    "price": order_price,
+                    "quantity":order_quantity
+                }
+            }    
+            cart.update(order_info)
+            print(f"{order_name} has been added to the cart successfuly")
+        else:
+            print("Please, Enter a valid choice")
+    elif user_choice ==  "2":
+        
+        if cart:
+            print("Cart:") 
+            for item in cart:
+                price = cart[item]["price"]
+                quantity = cart[item]["quantity"]
+                total_price = price * quantity
+                print(f"{item}: ${price} X {quantity} = ${total_price}")
+        else:
+            print("No items have been bought")
+        
+        total_items_price = [cart[item]["price"] * cart[item]["quantity"] for item in cart ]
+        
+        total_cost = sum(total_items_price)
+        print("-"*15)    
+        print(f"Total Cost is : {total_cost}")
+    
+    
+    elif user_choice == "3":
+        total_items_price = [cart[item]["price"] * cart[item]["quantity"] for item in cart ]
+        total_cost = sum(total_items_price)
+        print(f"Total Cost is : {total_cost}")
+      
+    elif user_choice == "4":
+        print("Quitting the programm....")
+        break
+    else:
+        print("Please, Enter a valid choice")
+if cart:
+    print("Cart:") 
+    for item in cart:
+        price = cart[item]["price"]
+        quantity = cart[item]["quantity"]
+        total_price = price * quantity
+        print(f"{item}: ${price} X {quantity} = ${total_price}")
+else:
+    print("No items have been bought")
+total_items_price = [cart[item]["price"] * cart[item]["quantity"] for item in cart ]    
+total_cost = sum(total_items_price)
+print("-"*15)    
+print(f"Total Cost is : {total_cost}")
+
+
+
+
+
+https://www.programiz.com/online-compiler/1DMFH7M9A04Jc
