@@ -7,7 +7,7 @@ def maximum_even_number(numbers):
             maximum = number
     return maximum
 def maximum_negative_even_number(neg_numbers):
-    maximum = -4 
+    maximum = -2 
     for number in neg_numbers:
         if number % 2 == 0 and number > maximum:
             maximum = number
