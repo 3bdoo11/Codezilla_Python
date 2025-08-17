@@ -11,4 +11,4 @@ def print_items_and_prices(items):
     for item, price in items.items():
         print(f"{item} Pizza: {price}EGP")
 
-print(print_items_and_prices(pizzas))
+print_items_and_prices(pizzas)
