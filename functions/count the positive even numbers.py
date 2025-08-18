@@ -13,7 +13,7 @@ def generate_random_even_numbers(num_even_numbers, range_start, range_end):
     import random
     even_numbers = []
     while len(even_numbers) < num_even_numbers:
-        num = random.randint(range_start, reange_end)
+        num = random.randint(range_start, range_end)
         if num % 2 == 0 and num not in even_numbers:
             even_numbers.append(num)
     return even_numbers
